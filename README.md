@@ -1,50 +1,50 @@
 ```markdown
-# **Teste de Validação de E-mails e CNPJs**
+Teste de Validação de E-mails e CNPJs
 
 Este projeto é uma solução automatizada para validação de e-mails empresariais, baseada em CNPJs, com funcionalidades adicionais de análise e relatórios detalhados. Ele utiliza inteligência artificial para prever a probabilidade de um e-mail ser válido ou não, integrando diferentes fontes de dados como a Receita Federal, além de fornecer gráficos e relatórios completos para análise.
 
 ---
 
-## **Funcionalidades**
+Funcionalidades
 
-- **Validação de E-mails**: Verifica a validade dos e-mails com base no padrão de domínios conhecidos e formatos específicos.
-- **Consultas Automáticas**: Realiza consultas aos CNPJs fornecidos para obter as informações da empresa e gerar os e-mails.
-- **Inteligência Artificial**: Utiliza um modelo de aprendizado de máquina (Random Forest) para classificar e-mails com base em nome e sobrenome.
-- **Análise Completa**: Gera gráficos e uma matriz de confusão para analisar a precisão do modelo.
-- **Relatórios**: Geração de relatórios detalhados em PDF, CSV e Excel, incluindo métricas de classificação, totais por domínio e CNPJ, padrões de e-mail e muito mais.
-
----
-
-## **Como Funciona**
-
-1. **Input de Dados**: O usuário carrega um arquivo CSV com os CNPJs das empresas que deseja validar os e-mails.
-2. **Validação e Geração de E-mails**: O sistema gera os e-mails com base nos CNPJs e valida esses e-mails através de um serviço SMTP.
-3. **Modelagem de IA**: A validação é aprimorada com a utilização de um modelo de inteligência artificial, treinado para prever a validade de e-mails com base em nome e sobrenome.
-4. **Relatório e Exportação**: O sistema gera gráficos e relatórios detalhados, que podem ser exportados em formato PDF, CSV e Excel.
-5. **Download de Resultados**: O usuário pode baixar um arquivo ZIP contendo os resultados completos, incluindo os relatórios e gráficos gerados.
+- Validação de E-mails: Verifica a validade dos e-mails com base no padrão de domínios conhecidos e formatos específicos.
+- Consultas Automáticas: Realiza consultas aos CNPJs fornecidos para obter as informações da empresa e gerar os e-mails.
+- Inteligência Artificial: Utiliza um modelo de aprendizado de máquina (Random Forest) para classificar e-mails com base em nome e sobrenome.
+- Análise Completa: Gera gráficos e uma matriz de confusão para analisar a precisão do modelo.
+- Relatórios: Geração de relatórios detalhados em PDF, CSV e Excel, incluindo métricas de classificação, totais por domínio e CNPJ, padrões de e-mail e muito mais.
 
 ---
 
-## **Tecnologias Utilizadas**
+Como Funciona
 
-- **Flask**: Framework web em Python para desenvolvimento do backend.
-- **pandas**: Biblioteca para manipulação e análise de dados.
-- **matplotlib** & **seaborn**: Bibliotecas para criação de gráficos e visualizações.
-- **FPDF**: Biblioteca para gerar PDFs com relatórios detalhados.
-- **scikit-learn**: Para a criação do modelo de aprendizado de máquina (Random Forest).
-- **zipfile**: Para criar arquivos ZIP contendo os resultados.
-- **openpyxl**: Para manipulação de arquivos Excel.
+1. Input de Dados: O usuário carrega um arquivo CSV com os CNPJs das empresas que deseja validar os e-mails.
+2. Validação e Geração de E-mails: O sistema gera os e-mails com base nos CNPJs e valida esses e-mails através de um serviço SMTP.
+3. Modelagem de IA: A validação é aprimorada com a utilização de um modelo de inteligência artificial, treinado para prever a validade de e-mails com base em nome e sobrenome.
+4. Relatório e Exportação: O sistema gera gráficos e relatórios detalhados, que podem ser exportados em formato PDF, CSV e Excel.
+5. Download de Resultados: O usuário pode baixar um arquivo ZIP contendo os resultados completos, incluindo os relatórios e gráficos gerados.
 
 ---
 
-## **Como Rodar o Projeto**
+Tecnologias Utilizadas
 
-### **Requisitos**
+- Flask: Framework web em Python para desenvolvimento do backend.
+- pandas: Biblioteca para manipulação e análise de dados.
+- matplotlib & seaborn: Bibliotecas para criação de gráficos e visualizações.
+- FPDF: Biblioteca para gerar PDFs com relatórios detalhados.
+- scikit-learn: Para a criação do modelo de aprendizado de máquina (Random Forest).
+- zipfile: Para criar arquivos ZIP contendo os resultados.
+- openpyxl: Para manipulação de arquivos Excel.
+
+---
+
+Como Rodar o Projeto
+
+Requisitos
 
 1. [Python 3.8+](https://www.python.org/downloads/)
 2. Dependências do projeto listadas em `requirements.txt`.
 
-### **Instalação**
+Instalação
 
 1. Clone este repositório:
 
@@ -77,7 +77,7 @@ Este projeto é uma solução automatizada para validação de e-mails empresari
 
 ---
 
-## **Estrutura do Projeto**
+Estrutura do Projeto
 
 ```plaintext
 teste_email/
@@ -101,7 +101,7 @@ teste_email/
 
 ---
 
-## **Contribuindo**
+Contribuindo
 
 Contribuições são bem-vindas! Para contribuir, siga as etapas abaixo:
 
@@ -112,13 +112,13 @@ Contribuições são bem-vindas! Para contribuir, siga as etapas abaixo:
 
 ---
 
-## **Licença**
+Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ---
 
-## **Contato**
+Contato
 
 Para mais informações ou dúvidas, entre em contato com o criador do projeto:
 
