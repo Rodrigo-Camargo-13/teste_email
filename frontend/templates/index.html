@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de E-mails</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="background-video">
+        <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+    </video>
+
+    <!-- Conteúdo centralizado -->
+    <div class="container">
+        <h1>SISTEMA DE VALIDAÇÃO DE E-MAILS</h1>
+        <h3>Permita que a inteligência facilite seu dia a dia...</h3>
+
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required><br>
+            <select name="cargo">
+                <option value="Todos">Todos os Cargos</option>
+                <option value="financeiro">Financeiro</option>
+                <option value="diretoria">Diretoria</option>
+                <option value="rh">RH</option>
+                <option value="contato">Contato</option>
+                <option value="comercial">Comercial</option>
+                <option value="ti">TI</option>
+            </select><br>
+            <button type="submit">Submeter Arquivo</button>
+        </form>
+    </div>
+</body>
+</html>

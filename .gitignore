@@ -1,0 +1,36 @@
+# Ignorar o ambiente virtual
+venv/
+*.env
+
+# Ignorar arquivos compilados do Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar arquivos de configuração do editor (Ex: VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar banco de dados SQLite
+*.sqlite3
+
+# Ignorar arquivos temporários e caches
+*.bak
+*.swp
+*.tmp
+
+# Ignorar arquivos de dependências de pacotes
+*.egg-info/
+
+# Ignorar arquivos de cache do pip
+pip-wheel-metadata/
+
+# Ignorar arquivos gerados pelo Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignorar arquivos gerados pelo sistema operacional (Ex: macOS, Windows)
+.DS_Store
+Thumbs.db

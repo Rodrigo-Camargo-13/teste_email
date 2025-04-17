@@ -1,0 +1,107 @@
+/* Resetando os padrões para garantir consistência em todos os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global do corpo */
+body {
+    height: 100vh;                   /* Garante que a altura da tela ocupe toda a página */
+    background-color: #000;          /* Fundo preto para contraste */
+    display: flex;
+    justify-content: center;         /* Alinha o conteúdo centralizado na horizontal */
+    align-items: center;             /* Alinha o conteúdo centralizado na vertical */
+    font-family: Arial, sans-serif;  /* Fonte clean e legível */
+    color: white;                    /* Cor do texto branco */
+    position: relative;              /* Necessário para o posicionamento do vídeo */
+}
+
+/* Estilo para o vídeo de fundo */
+#background-video {
+    position: fixed;                 /* Fixa o vídeo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;                     /* Faz o vídeo cobrir toda a largura da tela */
+    height: 100%;                    /* Faz o vídeo cobrir toda a altura da tela */
+    object-fit: cover;               /* Garante que o vídeo cubra toda a área sem deformações */
+    z-index: -1;                     /* Coloca o vídeo atrás de outros elementos */
+}
+
+/* Container para o conteúdo da página */
+.container {
+    text-align: center;              /* Centraliza o texto */
+    padding: 20px;
+    z-index: 1;                      /* Coloca o conteúdo acima do vídeo */
+    width: 100%;
+    max-width: 1200px;                /* Limita a largura máxima do conteúdo */
+    margin-top: -60px;                /* Ajuste para evitar que o conteúdo fique muito perto do topo */
+}
+
+/* Estilo para os títulos (h1) */
+h1 {
+    font-size: 48px;                 /* Tamanho grande para destaque */
+    font-weight: bold;
+    margin-bottom: 20px;             /* Espaço abaixo do título */
+    color: #fff;                     /* Cor branca */
+}
+
+/* Estilo para o subtítulo (h3) */
+h3 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #fff;                     /* Cor branca */
+    font-weight: 300;                /* Peso da fonte mais leve */
+}
+
+/* Estilos para os botões e seletores (inputs) */
+button, select {
+    padding: 15px 25px;              /* Preenchimento interno dos botões */
+    font-size: 18px;                 /* Tamanho da fonte dos botões */
+    margin: 30px;                    /* Espaço ao redor dos botões */
+    cursor: pointer;                 /* Cursor em forma de mão para indicar ação */
+    border-radius: 10px;             /* Bordas arredondadas */
+    width: 100%;                     /* Botões ocupam toda a largura disponível */
+    max-width: 350px;                /* Limita a largura máxima para garantir boa aparência */
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #8c7b5c;       /* Cor de fundo dourada escura */
+    color: white;                    /* Cor do texto branco */
+    border: none;                    /* Retira borda */
+    transition: 0.3s;                 /* Transição suave ao passar o mouse */
+}
+
+/* Estilo para o botão quando o mouse passa sobre ele */
+button:hover {
+    background-color: #a6927d;       /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo para o seletor de cargos (select) */
+select {
+    width: 100%;                     /* Seletor ocupa toda a largura disponível */
+    max-width: 350px;                /* Limita a largura máxima */
+    padding: 15px;                   /* Preenchimento interno */
+    border-radius: 10px;             /* Bordas arredondadas */
+    background-color: #f1f1f1;       /* Cor de fundo cinza claro */
+    border: none;                    /* Retira a borda */
+    font-size: 16px;                 /* Tamanho da fonte */
+    margin-left: 30px;               /* Espaço à esquerda */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;             /* Reduz o tamanho da fonte no título */
+    }
+
+    h3 {
+        font-size: 18px;             /* Reduz o tamanho da fonte no subtítulo */
+    }
+
+    button, select {
+        width: 90%;                  /* Botões e seletor ocupam 90% da largura da tela */
+    }
+}
